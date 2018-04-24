@@ -2,7 +2,7 @@ FROM ataber/petsc
 
 #slepc
 ENV SLEPC_VERSION 3.7.4
-RUN wget http://slepc.upv.es/download/download.php?filename=slepc-$SLEPC_VERSION.tar.gz \
+RUN wget http://slepc.upv.es/download/distrib/slepc-$SLEPC_VERSION.tar.gz \
     -O slepc-$SLEPC_VERSION.tar.gz && \
     tar xfz slepc-$SLEPC_VERSION.tar.gz && rm -f slepc-$SLEPC_VERSION.rag.gz && \
     cd slepc-$SLEPC_VERSION && \
