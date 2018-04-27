@@ -10,5 +10,4 @@ RUN wget http://slepc.upv.es/download/distrib/slepc-$SLEPC_VERSION.tar.gz \
     make SLEPC_DIR=`pwd` && make SLEPC_DIR=`pwd` install && \
     cd && rm -rf slepc-$SLEPC_VERSION*
 
-ENV SLEPC_DIR $HOME/libs/slepc-$SLEPC_VERSION
-
+ENV SLEPC_DIR usr/lib/slepc-$SLEPC_VERSION
