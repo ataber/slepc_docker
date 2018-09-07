@@ -2,7 +2,7 @@ FROM ataber/petsc
 
 #slepc
 ENV SLEPC_VERSION 3.9.2
-RUN unset PETSC_ARCH && cd /tmp && \
+RUN cd /tmp && \
     wget http://slepc.upv.es/download/distrib/slepc-$SLEPC_VERSION.tar.gz \
     -O slepc-$SLEPC_VERSION.tar.gz && \
     tar xfz slepc-$SLEPC_VERSION.tar.gz && rm -f slepc-$SLEPC_VERSION.rag.gz && \
