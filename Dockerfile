@@ -1,7 +1,7 @@
 FROM ataber/petsc
 
 #slepc
-ENV SLEPC_VERSION 3.10.0
+ENV SLEPC_VERSION 3.10.1
 RUN cd /tmp && \
     wget http://slepc.upv.es/download/distrib/slepc-$SLEPC_VERSION.tar.gz \
     -O slepc-$SLEPC_VERSION.tar.gz && \
